@@ -1,0 +1,168 @@
+:root {
+    --light: #ffffff;
+    --dark: #b1396b;
+    --darker: #312137;
+    --darkest: #000000;
+}
+
+body {
+    background-color: var(--darkest);
+    font-family: 'Lobster', Times, serif;
+    color: var(--light);
+    margin: 0;
+    padding: 0;
+    font-size: 4rem;
+    display: flow;
+}
+
+li a:link {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.site-name {
+    font-family: "Rubik Glitch", system-ui;
+    position: relative;
+}
+
+.current a:hover {
+    text-decoration: none;
+}
+
+.outer-container {
+    background-color: var(--darker);
+    padding-bottom: 16px;
+    padding-top: 16px;
+    /* width: 35%; */
+    /* max-width: 35%; */
+    display: flex;
+    height: 100vh;
+    /* min-width: fit-content;
+    position: absolute;
+    left: 50%;
+    top: 47%;
+    box-sizing: border-box;
+    transform: translate(-50%, -50%);
+    overflow: auto;
+    white-space: nowrap; */
+}
+
+.inner-container {
+    overflow: hidden;
+    position: relative;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 8.5% 16px 8.5%;
+    /* align-items: center; */
+}
+
+a:link {
+    text-decoration: none;
+    color: var(--light);
+}
+
+a:visited {
+  color: var(--light);
+}
+
+a:hover {
+  color: var(--dark);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.new-text {
+    display: none;
+}
+
+.top-div {
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.borderspan {
+    border: 1px solid var(--light);
+    border-radius: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 10px;
+}
+
+.poetry-holder {
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.border-box {
+    border: 1px solid var(--light);
+    border-radius: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 10px;
+}
+
+button {
+    --col: rgb(13, 188, 247);
+    background-color: transparent;
+    color: var(--col);
+    border: 3px solid var(--col);
+    border-radius: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 10px;
+    width: 100%;
+    font-family: "Lobster";
+    font-size: 2rem;
+    display: flex;
+    height: 7rem;
+}
+
+button:hover {
+    box-shadow: var(--col) 0px 0px 10px;
+}
+
+.poetry-spoiler {
+    margin-right: auto;
+    margin-left: 20px;
+    overflow: clip;
+    display: grid;
+    font-size: 1.95rem;
+    text-align: left; 
+    padding-left: 1px;
+}
+
+.poetry-text::before {
+    content: '';
+    position: absolute;
+    width: 105%;
+    height: 100%;
+    max-height: 4rem;
+    left: -2.5%;
+    top: 0;
+    margin-bottom: 5px;
+    background: linear-gradient(transparent 5px, black);
+    pointer-events: none;   /* Ensures it doesn't block interactions with text */
+}
+
+.poetry-title {
+    margin-bottom: 5px;
+}
+
+.poetry-text {
+    position: relative;
+    color:hsl(from var(--col) h calc(s - 30) calc(l - 20));
+}
