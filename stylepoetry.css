@@ -121,28 +121,50 @@ button {
     color: var(--col);
     border: 3px solid var(--col);
     border-radius: 6px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 0px;
     margin: 10px;
     width: 100%;
     font-family: "Lobster";
-    font-size: 2rem;
+    font-size: 1.7rem;
     display: flex;
     height: 7rem;
+    transition: all 0.25s ease-out;
+}
+
+.selectedButton {
+    /* max-height: fit-content; */
 }
 
 button:hover {
     box-shadow: var(--col) 0px 0px 10px;
 }
 
+.arrow {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.arrowOpen {
+    transform: rotate(180deg);
+    /* vertical-align: bottom; */
+}
+
+.hoverArrow {
+    background: var(--col);
+    color: black;
+    box-shadow: var(--col) 0px 0px 10px;
+}
+
 .poetry-spoiler {
-    margin-right: auto;
-    margin-left: 20px;
+    margin-left: 10px;
+    width: 100%;
     overflow: clip;
-    display: grid;
-    font-size: 1.95rem;
+    display: flex;
+    flex-direction: column;
     text-align: left; 
     padding-left: 1px;
+    font-family: "Quicksand", system-ui;
+    font-weight: 500;
 }
 
 .poetry-text::before {
@@ -150,7 +172,7 @@ button:hover {
     position: absolute;
     width: 105%;
     height: 100%;
-    max-height: 4rem;
+    /* max-height: 4rem; */
     left: -2.5%;
     top: 0;
     margin-bottom: 5px;
@@ -159,10 +181,33 @@ button:hover {
 }
 
 .poetry-title {
+    height: fit-content;
     margin-bottom: 5px;
 }
 
 .poetry-text {
     position: relative;
     color:hsl(from var(--col) h calc(s - 30) calc(l - 20));
+    /* font-size: 1.5rem; */
+}
+
+br {
+    display: block;
+    /* makes it have a width */
+    content: "";
+    /* clears default height */
+    margin-top: 2px;
+    /* change this to whatever height you want it */
+}
+
+.poetry-stats {
+    font-family: "Quicksand", system-ui;
+    text-align: right;
+    min-width: fit-content;
+    margin-right: 10px;
+    /* font-size: 1.5rem; */
+}
+
+#button2 {
+    --col: rgb(247, 13, 228);
 }

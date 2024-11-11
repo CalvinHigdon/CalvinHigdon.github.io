@@ -9,36 +9,63 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Barrio&family=Lobster&family=Quicksand:wght@300..700&family=Rubik+Glitch&display=swap"
         rel="stylesheet">
-        <script src="poetry.js"></script>
+    <script src="poetry.js"></script>
 </head>
+
 <body>
     <div class="top-div">
         <span class="borderspan"><a href="index.html">back</a></span>
         poetry
     </div>
     <div class="poetry-holder">
-        <div class="border-box" id="poem0">this is me</div>
-        <div class="border-box">
-            <p>hello</p>
-        </div>
-        <button onclick="changePoemHTML()" id="clickButton">
-            <div>&#11167</div>
+        <button id="button1" onmouseenter="hoverButton(this.id)" onmouseleave="hoverButton(this.id)" onclick="changePoemHTML(this.id)">
+            <div class="arrow">&#11167</div>
             <div class="poetry-spoiler">
                 <div class="poetry-title">i have only been.</div>
                 <div class="poetry-text">a gnarled poem. hurtling out of soft</br>
-                lungs. a leave, making breath from absence.</br>
-                following alone so little and alone, scrape</br>
-                out my stomach. i think ive only been</br>
-                a child. and a dark oak flute, i am so</br>
-                timid. i have only been. pure of light, and</br>
-                down. shambling. in some heart. eating breakfast.</br>
-                clutch. dinner.
-                
+                    lungs. a leave, making breath from absence.</br>
+                </div>
+                <div class="poetry-full">
+                    a gnarled poem. hurtling out of soft</br>
+                    lungs. a leave, making breath from absence.</br>
+                    following alone so little and alone, scrape</br>
+                    out my stomach. i think ive only been</br>
+                    a child. and a dark oak flute, i am so</br>
+                    timid. i have only been. pure of light, and</br>
+                    down. shambling. in some heart. eating breakfast.</br>
+                    clutch. dinner.</br>
+                </div>
             </div>
+            <div class="poetry-stats">
+                Date: 2021-10-10</br>
+                Lines: 10
+            </div>
+            <div class="arrow">&#11167</div>
         </button>
-
-<p id="demo"></p>
+        <button id="button2" onmouseenter="hoverButton(this.id)" onmouseleave="hoverButton(this.id)" onclick="changePoemHTML(this.id)">
+            <div class="arrow">&#11167</div>
+            <div class="poetry-spoiler">
+                <div class="poetry-title">i have only been.</div>
+                <div class="poetry-text">a gnarled poem. hurtling out of soft</br>
+                    lungs. a leave, making breath from absence.</br>
+                </div>
+                <div class="poetry-full">
+                    a gnarled poem. hurtling out of soft</br>
+                    lungs. a leave, making breath from absence.</br>
+                    following alone so little and alone, scrape</br>
+                    out my stomach. i think ive only been</br>
+                    a child. and a dark oak flute, i am so</br>
+                    timid. i have only been. pure of light, and</br>
+                    down. shambling. in some heart. eating breakfast.</br>
+                    clutch. dinner.</br>
+                </div>
+            </div>
+            <div class="poetry-stats">
+                Date: 2024-10-10</br>
+                Lines: 8
+            </div>
+            <div class="arrow">&#11167</div>
+        </button>
     </div>
 </body>
-
 </html>
